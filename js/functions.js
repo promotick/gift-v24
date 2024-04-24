@@ -676,4 +676,20 @@
 
     });
 
+    const closeButton = document.getElementById('close-cookie')
+    const divClose = document.getElementById('box-cookies')
+
+    closeButton.addEventListener('click', () => {
+      divClose.style.display = 'none';
+    });
+
+    $('#closeButton').click(function() {
+      $('#divToClose').hide();
+      $('.footer').css('padding', '0');;
+    });
+
+   /*  $('#closeButton').click(function() {
+      $('.footer').css("padding-bottom", "0px");
+    }); */
+
 })(jQuery); // End of use strict

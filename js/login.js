@@ -91,3 +91,57 @@ document.addEventListener("DOMContentLoaded", function() {
 	  }
 	});
   });
+
+/* 
+  document.addEventListener("DOMContentLoaded", function() {
+	const steps = document.querySelectorAll(".form-step");
+	let currentStep = 0;
+  
+	function showStep(step) {
+	  steps.forEach((s, index) => {
+		if (index === step) {
+		  s.style.display = "block";
+		} else {
+		  s.style.display = "none";
+		}
+	  });
+	}
+  
+	function nextStep() {
+	  if (currentStep < steps.length - 1) {
+		currentStep++;
+		showStep(currentStep);
+	  }
+	}
+  
+	function prevStep() {
+	  if (currentStep > 0) {
+		currentStep--;
+		showStep(currentStep);
+	  }
+	}
+  
+	document.querySelectorAll(".next-btn").forEach(btn => {
+	  btn.addEventListener("click", nextStep);
+	});
+  
+	document.querySelectorAll(".prev-btn").forEach(btn => {
+	  btn.addEventListener("click", prevStep);
+	});
+  
+	document.querySelectorAll(".validate-btn").forEach(btn => {
+	  btn.addEventListener("click", function() {
+		currentStep++;
+		nextStep();
+	  });
+	});
+  
+	document.querySelectorAll(".option-btn").forEach(btn => {
+	  btn.addEventListener("click", function() {
+		const selectedOption = this.getAttribute("data-option");
+		document.getElementById("step-0").style.display = "none";
+		document.getElementById("step-" + selectedOption + "-1").style.display = "block";
+		currentStep++;
+	  });
+	});
+  }); */

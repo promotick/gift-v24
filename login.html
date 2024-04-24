@@ -85,25 +85,42 @@
                    
                   </ul>
                   <div class="tab-content" id="myTabContent">
+
                     <div class="tab-pane fade active inicio" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <h3>Ingresa con tu cuenta</h3>
-                        <p class="text-ini">Compra Gift Cards de forma rápida y segura.</p>
-                        <a href="#" class="btn-google"><img src="images/icons/google-icon.png" alt="google"> Iniciar sesión con Google</a>
-                        <div class="row">
-                            <div class="col-md-4"></div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label for="inputEmail4"><span class="red">*</span> Correo electrónico</label>
-                              <input type="email" class="form-control" id="inputEmail4" placeholder="Ej: micorreo@gmail.com">
+                        <div class="form-step" id="step-0">
+                            <h3>Ingresa con tu cuenta</h3>
+                            <p class="text-ini">Compra Gift Cards de forma rápida y segura.</p>
+                            <a href="#" class="btn-google"><img src="images/icons/google-icon.png" alt="google"> Iniciar sesión con Google</a>
+                            <div class="row">
+                                <div class="col-md-4"></div>
                             </div>
-                            <div class="form-group col-md-6">
-                              <label for="inputPassword4"><span class="red">*</span> Contraseña</label>
-                              <input type="password" class="form-control" id="inputPassword4" placeholder="*********">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                <label for="inputEmail4"><span class="red">*</span> Correo electrónico</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Ej: micorreo@gmail.com">
+                                </div>
+                                <div class="form-group col-md-6">
+                                <label for="inputPassword4"><span class="red">*</span> Contraseña</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="*********">
+                                </div>
                             </div>
+                            <a class="olvidar-contra option-btn" data-option="opcion3">¿Olvidaste tu contraseña?</a>
+                            <a class="btn-iniciar" href="#">Iniciar sesión</a>
                         </div>
-                        <a class="olvidar-contra" href="#">¿Olvidaste tu contraseña?</a>
-                        <a class="btn-iniciar" href="#">Iniciar sesión</a>
+
+
+                        <div class="form-step" id="step-opcion3">
+                            <h3>Recupera tu contraseña</h3>
+                            <p class="text-ini">¡No te preocupes! Ingresa tu correo y te enviaremos un código para reestablecer tu contraseña.</p>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label for="inputEmail4"><span class="red">*</span> Correo electrónico</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Ej: micorreo@gmail.com">
+                                </div>
+                            </div>
+
+                            <a class="btn-iniciar mrg-top33" href="#">Enviar</a>
+                        </div>
                     </div>
 
 
@@ -125,8 +142,8 @@
                                 </button>
                             </div>
                             <button class="btn-iniciar mrg-top24 validate-btn">Continuar</button>
-
                         </div>
+                        
                         <div class="form-step" id="step-opcion1">
                             <h3>Crea tu cuenta</h3>
                             <p class="text-ini">Compra Gift Cards de forma rápida y segura.</p>
@@ -207,40 +224,128 @@
 
                         </div>
 
-                      <!--   <div class="form-step" id="step-0">
-                            <h2>Seleccionar Opción</h2>
-                            <button class="option-btn" data-option="opcion1">Opción 1</button>
-                            <button class="option-btn" data-option="opcion2">Opción 2</button>
-                            <button class="validate-btn">Validar</button>
-                          </div>
-                          <div class="form-step" id="step-opcion1">
-                            <h2>Paso 1 Opción 1</h2>
-                            <input type="text" placeholder="Nombre">
-                            <input type="email" placeholder="Correo electrónico">
-                            <button class="next-btn">Siguiente</button>
-                          </div>
-                          <div class="form-step" id="step-opcion2">
-                            <h2>Paso 1 Opción 2</h2>
-                            <input type="text" placeholder="Nombre">
-                            <input type="tel" placeholder="Teléfono">
-                            <button class="next-btn">Siguiente</button>
-                          </div>
-                          <div class="form-step" id="step-2">
-                            <h2>Paso 2</h2>
-                            <input type="text" placeholder="Dirección">
-                            <input type="tel" placeholder="Teléfono">
-                            <button class="prev-btn">Anterior</button>
-                            <button class="next-btn">Siguiente</button>
-                          </div>
-                          <div class="form-step" id="step-3">
-                            <h2>Paso 3</h2>
-                            <textarea placeholder="Comentarios"></textarea>
-                            <button class="prev-btn">Anterior</button>
-                            <button class="submit-btn">Enviar</button>
-                          </div>
- -->
+                        <div class="form-step" id="step-opcion2">
+                            <h3>Crea tu cuenta empresa</h3>
+                            <p class="text-ini">Compra Gift Cards de forma rápida y segura.</p>
+                            <a href="#" class="btn-google"><img src="images/icons/google-icon.png" alt="google"> Regístrate con Google</a>
+
+                            <div class="row o-midd">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4 text">O completa</div>
+                                <div class="col-md-4"></div>
+                            </div>
+                            <br>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4"><span class="red">*</span> Nombre</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Ej: Jesus">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4"><span class="red">*</span> Apellidos</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Ej: Torres Sánchez">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4"><span class="red">*</span> Tu cargo</label> <br>
+                                    <select class="custom-select wdt-100" id="inputGroupSelect01">
+                                        <option selected>Seleccionar</option>
+                                        <option value="1">Administrador</option>
+                                        <option value="2">Administrador</option>
+                                        <option value="3">Administrador</option>
+                                      </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4"><span class="red">*</span> Tel&eacute;fono celular / WhatsApp</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Ej: +51 999 888 777">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4"><span class="red">*</span> Correo electr&oacute;nico</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Ej: micorreo@gmail.com">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4"><span class="red">*</span> Contraseña</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="********">
+                                </div>
+                            </div>
+                            <br> <br>
+                            <div class="form-row margin-bottom-24">
+                                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                                <label class="form-check-label" for="autoSizingCheck"> Acepto la <a class="sky-c" href="#">Política de Privacidad</a> y los <a class="sky-c" href="#">Términos y Condiciones.</a></label>
+                            </div>
+                            <a class="btn-iniciar next-btn" href="#">Crear cuenta</a>
+                        </div>
+                        <div class="form-step" id="step-3">
+                            <p>2</p>
+                        </div>
+
+                       <!--  <div id="form-container">
+                            <div class="form-step" id="step-0">
+                              <h2>Seleccionar Opción</h2>
+                              <button class="option-btn" data-option="opcion1">Opción 1</button>
+                              <button class="option-btn" data-option="opcion2">Opción 2</button>
+                            </div>
+                            <div class="form-step" id="step-opcion1-1">
+                              <h2>Paso 1 Opción 1</h2>
+                              <input type="text" placeholder="Nombre">
+                              <input type="email" placeholder="Correo electrónico">
+                              <button class="validate-btn">Validar</button>
+                            </div>
+                            
+                            <div class="form-step" id="step-opcion2-2">
+                                <h2>Paso 2 Opción 2</h2>
+                                <input type="text" placeholder="Dirección">
+                                <input type="tel" placeholder="Teléfono">
+                                <button class="validate-btn">Validar</button>
+                            </div>
+                            <div class="form-step" id="step-2">
+                                <h2>Paso 4</h2>
+                                <input type="text" placeholder="Dirección">
+                                <input type="tel" placeholder="Teléfono">
+                                <button class="prev-btn">Anterior</button>
+                                <button class="next-btn">Siguiente</button>
+                              </div>
+
+                            <div class="form-step" id="step-opcion1-2">
+                              <h2>Paso 2 Opción 1</h2>
+                              <input type="text" placeholder="Dirección">
+                              <input type="tel" placeholder="Teléfono">
+                              <button class="validate-btn">Validar</button>
+                            </div>
+
+                            <div class="form-step" id="step-opcion1-3">
+                                <h2>Paso 3 Opción 1</h2>
+                                <textarea placeholder="Comentarios"></textarea>
+                                <button class="validate-btn">Validar</button>
+                            </div>
+
+                            
+                            <div class="form-step" id="step-opcion2-1">
+                              <h2>Paso 1 Opción 2</h2>
+                              <input type="text" placeholder="Nombre">
+                              <input type="email" placeholder="Correo electrónico">
+                              <button class="validate-btn">Validar</button>
+                            </div>
+                            <div class="form-step" id="step-opcion2-3">
+                              <h2>Paso 3 Opción 2</h2>
+                              <textarea placeholder="Comentarios"></textarea>
+                              <button class="validate-btn">Validar</button>
+                            </div>
+                            <div class="form-step" id="step-3">
+                              <h2>Paso 5</h2>
+                              <textarea placeholder="Comentarios"></textarea>
+                              <button class="prev-btn">Anterior</button>
+                              <button class="submit-btn">Enviar</button>
+                            </div>
+                          </div> -->
+
 
                     </div>
+
+
+
                   </div>
             </div>
         </div>

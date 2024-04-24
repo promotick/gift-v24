@@ -11622,3 +11622,55 @@ body {
   .form-step:first-child {
     display: block;
   }
+
+.chosen-container{
+    width: 100% !important;
+}
+
+
+.mrg-top33{
+    margin-top: 33px;
+}
+
+
+#box-cookies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px 20px;
+    position: fixed;
+    bottom: 0;
+    background-color: #e6f7ff;
+    width: 100%;
+    z-index: 100;
+}
+
+#box-cookies p {
+    margin: 0px;
+    font-size: 12px;
+    color: #0D1436;
+}
+#box-cookies p span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn-cookie{
+    background-color: #4457FF;
+    color: #fff;
+    font-weight: 700;
+    padding: 4px 22px;
+    border-radius: 60px;
+    border: none;
+    margin: 0px 50px 0px 14px;
+    cursor: pointer;
+}
+#close-cookie {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.padg-bot68{
+    padding-bottom: 0px;
+}
