@@ -2950,13 +2950,6 @@ blockquote.style2:after {
     float: left;
 }
 
-/* .header.style3.ontop .logo-wapper {
-    display: none;
-} */
-
-/* .header.style3.ontop .menu-wapper {
-    width: 100%;
-} */
 
 .header.style3.ontop .slogan {
     display: none;
@@ -2965,19 +2958,6 @@ blockquote.style2:after {
 .header.style3.ontop .main-menu {
     display: inline-block;
 }
-
-/* .header.style3.ontop .top-header {
-    display: inline-block;
-    width: auto;
-    float: right;
-    padding: 0;
-    border: none;
-    margin-top: 2px;
-} */
-
-/* .header.style3.ontop .main-menu > li > a {
-    padding: 10px 0;
-} */
 
 .header.style5.ontop .main-header {
     display: block;
@@ -3087,6 +3067,10 @@ blockquote.style2:after {
 /*------------------------------------
 PRODUCT
 ------------------------------------*/
+
+.tab-content .product-item {
+    width: calc(100% / 3 - 40px / 3);
+}
 
 .product-item {
     list-style: none;
@@ -5280,24 +5264,6 @@ FOOTER
     padding-right: 0;
     border: none;
 }
-
-/*.lastest-blog .right a{
-    position: relative;
-    display: inline-block;
-}
-.lastest-blog .right a:before {
-    content: "";
-    float: left;
-    left: 0;
-    position: absolute;
-    top: 45%;
-    z-index: 9;
-    width: 0;
-    height: 0;
-    border-bottom: 12px solid transparent;
-    border-left: 12px solid white;
-    border-top: 15px solid transparent;
-}*/
 
 .lastest-blog.style2 .left,
 .lastest-blog.style2 .right {
@@ -8349,12 +8315,6 @@ BLOG PAGE
     font-family: 'Lato', sans-serif;
 }
 
-/*
-.kt-contact-form textarea {
-	height: 306px;
-}
-*/
-
 .page-404 {
     padding: 100px 0 110px 0;
 }
@@ -9041,6 +9001,20 @@ RESPONSIVE
 }
 
 @media (max-width: 991px) {
+
+    .icon-cblue{
+        max-width: 30%;
+    }
+
+    .dis-wrap {
+        justify-content: space-around;
+    }
+
+    .content-blue{
+        margin: 8px 8px !important;
+        width: calc(100% / 2 - 10px) !important;
+    }
+
     /* PRODUCT GRID*/
     .product-list-grid.desktop-columns-1 .product-item:nth-child(1n + 1),
     .product-list-grid.desktop-columns-2 .product-item:nth-child(2n + 1),
@@ -9302,6 +9276,21 @@ RESPONSIVE
 }
 
 @media (max-width: 767px) {
+
+    .tab-content .product-thumb a img {
+        width: 100%;
+    }
+    .tab-content .box-productmid .product-item:not(:nth-child(2n)) {
+        margin-right: 20px !important;
+    }
+    .tab-content .product-item {
+        width: calc(100% / 2 - 40px / 2);
+    }
+
+    .content-blue {
+        min-width: 312px !important;
+    }
+
     /* PRODUCT GRID*/
     .product-list-grid.tablet-columns-1 .product-item:nth-child(1n + 1),
     .product-list-grid.tablet-columns-2 .product-item:nth-child(2n + 1),
@@ -9415,11 +9404,7 @@ RESPONSIVE
         font-weight: 600;
         padding: 0 20px;
     }
-    /*
-	.tab-product .nav-tab li a:after {
-		display: none;
-	}
-*/
+  
     .tab-product .nav-tab li:hover a,
     .tab-product .nav-tab li.active a {
         color: #7d7b7b;
@@ -9576,9 +9561,22 @@ RESPONSIVE
         opacity: 1;
         visibility: inherit;
     }
+    
 }
 
 @media (max-width: 480px) {
+
+    .tab-content .box-productmid .product-item:not(:nth-child(3n)) {
+        margin-right: 0px !important;
+    }
+
+    .tab-content .box-productmid .product-item:not(:nth-child(2n)) {
+        margin-right: 0px !important;
+    }
+    .tab-content .product-item {
+        width: 100% !important;
+    }
+
     .lastest-blog .left,
     .lastest-blog .right {
         width: 100%;
@@ -10437,13 +10435,18 @@ textarea.form-control {
     padding: 56px 0px;
 }
 
+.dis-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .content-blue{
     background-color: #172948;
     border-radius: 24px;
     padding: 24px;
     height: 264px;
-    max-width: 360px;
-    width: 32%;
+    position: relative;
+    width: calc(100% / 3 - 50px / 3);
     margin: 0px 8px;
 }
 .content-blue .fnt-18 {
@@ -10451,6 +10454,10 @@ textarea.form-control {
 }
 .content-blue p {
     color: #fff;
+}
+
+.icon-cblue{
+    width: 50%;
 }
 
 .content-parati h2 {
@@ -10532,7 +10539,7 @@ textarea.form-control {
 }
 
 .buscador-middle{
-    width: 480px;
+    max-width: 480px;
     margin: auto;
     background-color: #fff;
     border-radius: 14px;
