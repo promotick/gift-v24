@@ -9280,6 +9280,23 @@ RESPONSIVE
 
 @media (max-width: 767px) {
 
+    .all-cards .box-productmid .product-item {
+        width: calc(100% / 2 - 60px / 2);
+    }
+    .box-productmid .product-item:not(:nth-child(3n)) {
+        margin-right: 0px;
+    }
+    .box-productmid .product-item:not(:nth-child(2n)) {
+        margin-right: 20px;
+    }
+
+    .body-gift .all-cards .product-item .has-back-image img {
+        width: 100%;
+    }
+    .body-gift .all-cards .box-productmid {
+        justify-content: center;
+    }
+
     .img-resp {
         display: block !important;
     }
@@ -9926,10 +9943,20 @@ li.info-pts {
 
 }
 
-@media(max-width:768px) {
+@media (max-width:768px) {
     .fondo {
         background-size: cover!important;
         margin-top: 0!important;
+    }
+}
+
+@media (max-width: 520px) {
+    .all-cards .box-productmid .product-item {
+        width: 100%;
+    }
+
+    .box-productmid .product-item:not(:nth-child(2n)) {
+        margin-right: 0px;
     }
 }
 
