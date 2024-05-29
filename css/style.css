@@ -705,7 +705,8 @@ blockquote.style2:after {
 
 .all-cards .box-productmid .product-item {
     width: calc(100% / 3 - 60px / 3);
-    max-width: 282px !important;
+    /* max-width: 282px !important;
+    min-width: 250px !important; */
     border-radius: 16px;
 }
 .box-productmid .product-item:not(:nth-child(3n)) {
@@ -9002,6 +9003,11 @@ RESPONSIVE
 
 @media (max-width: 991px) {
 
+
+    .wdt-filter{
+        display: none;
+    }
+
     .icon-cblue{
         max-width: 30%;
     }
@@ -9277,6 +9283,43 @@ RESPONSIVE
 
 @media (max-width: 767px) {
 
+    .img-resp {
+        display: block !important;
+    }
+
+    .footer{
+        padding-top: 0px;
+    }
+    .footer .footer-bottom{
+        margin-top: 0px;
+        padding-bottom: 30px;
+    }
+    .txt-perf{
+        display: none;
+    }
+    .header.style3 .top-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 5px !important;
+        padding-bottom: 0px !important;
+    }
+    .border-rad {
+        bottom: -11px !important;
+        height: 12px !important;
+    }
+    .resp-pdmr{
+        padding-right: 16px;
+        margin-right: 16px;
+        border-right: 2px solid #fff;
+    }
+    .top-header .mrg-top14{
+        margin-top: 0px !important;
+    }
+    .logo {
+        display: none !important;
+    }
+
     .tab-content .product-thumb a img {
         width: 100%;
     }
@@ -9393,16 +9436,15 @@ RESPONSIVE
     }
     .header.style3 .mobile-navigation {
         margin-top: 7px;
+        color: #fff;
     }
     .tab-product .nav-tab {
         text-align: center;
-    }
-    .tab-product .nav-tab li {
-        padding: 0;
+        margin-bottom: 22px;
     }
     .tab-product .nav-tab li a {
         font-weight: 600;
-        padding: 0 20px;
+        padding: 0px 5px;
     }
   
     .tab-product .nav-tab li:hover a,
@@ -9862,6 +9904,29 @@ li.info-pts {
     .txt-desk {
         display: none;
     }
+    .bandera-code{
+        display: none !important;
+    }
+
+    .box-tabs {
+        display: flex !important;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .box-tabs li {
+        display: inline-block;
+        padding: 10px;
+        list-style-type: none;
+    }
+    .box-tabs li a {
+        text-decoration: none;
+    }
+
+    .tab-product .nav-tab li {
+        margin-bottom: 12px;
+        margin-right: 10px;
+    }
+
 }
 
 @media(max-width:768px) {
@@ -10756,9 +10821,9 @@ body {
     background: #C1C1C1;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 12px;
-}
+} */
 
 ::-webkit-scrollbar-track {
     background-color: rgba(0, 0, 0, .05);
@@ -11680,4 +11745,8 @@ body {
 
 .padg-bot68{
     padding-bottom: 0px;
+}
+
+.img-resp{
+    display: none;
 }
